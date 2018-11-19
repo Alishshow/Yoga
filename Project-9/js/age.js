@@ -1,13 +1,10 @@
 // <input id = "age" value= "30">
-// let age = document.getElementById('age');
+let age = document.getElementById('age'),   
+    surname = 'Пётр',
+    name = 'Петров';
 
-function showUser() {
-    alert("Пользователь " + this.surname + " " + this.name + ", его возраст " + this.value);
+function showUser(surname, name) {
+    alert("Пользователь " + surname + " " + name + ", его возраст " + this.value);
 }
-let age = {
-    surname: '',
-    name: '',
-    value: '30'
-};
 
-showUser.call(age)
+showUser.call(age, surname, name);
